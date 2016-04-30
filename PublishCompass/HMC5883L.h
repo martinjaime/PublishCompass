@@ -59,6 +59,7 @@ uint16_t readCompass(uint16_t *value)
 	temp = i2c_readAck();
 	temp = (temp<<8) | i2c_readAck();
 	value[0] = temp;
+	printf("in func: temp = %d\n", temp);
 	
 	// Read z
 	temp = i2c_readAck();

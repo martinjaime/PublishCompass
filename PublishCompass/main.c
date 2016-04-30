@@ -29,6 +29,7 @@ int main(void)
 	HMC5883L_init();
 	_delay_ms(100); // Wait for compass to initiate
 	printf("hello world!\n");
+	printf("F_CPU: %u\n", F_CPU)
     while (1)
     {
  		//i2c_read_byte(0x3C, 0x03, &x_gaussLSB);
